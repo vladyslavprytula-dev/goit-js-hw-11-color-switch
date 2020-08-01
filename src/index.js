@@ -23,10 +23,8 @@ startBtnRef.addEventListener('click', () => {
   if (isActive) {
     return;
   }
+  intervalId = setInterval(changeColor, 1000);
   isActive = true;
-  intervalId = setInterval(() => {
-    changeColor();
-  }, 1000);
 });
 stopBtnRef.addEventListener('click', () => {
   clearInterval(intervalId);
