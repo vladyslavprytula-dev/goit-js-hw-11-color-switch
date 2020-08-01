@@ -14,7 +14,6 @@ const randomIntegerFromInterval = (min, max) => {
 };
 let intervalId;
 let isActive = false;
-console.log(colors.length);
 const changeColor = () => {
   const randomColor = colors[randomIntegerFromInterval(0, colors.length - 1)];
   document.body.style.backgroundColor = randomColor;
